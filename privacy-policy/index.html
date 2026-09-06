@@ -81,10 +81,21 @@
         background: var(--accent-soft);
         border: 1px solid var(--rule);
         border-radius: 8px;
-        padding: 8px 14px;
+        padding: 10px 14px;
         margin-top: 14px;
         font-size: 0.95rem;
-        word-break: break-all;
+        max-width: 100%;
+      }
+      .contact .label {
+        display: block;
+        color: var(--muted);
+        font-size: 0.82rem;
+        margin-bottom: 2px;
+      }
+      .contact a {
+        display: block;
+        direction: ltr;
+        overflow-wrap: anywhere;
       }
       .contact a {
         color: var(--text);
@@ -179,7 +190,7 @@
             ومع من يُشارك. كل بند هنا يقابل ميزة حقيقية في التطبيق.
           </p>
           <div class="contact">
-            للتواصل:
+            <span class="label">للتواصل</span>
             <a href="mailto:mohammed.ezzat.1996@outlook.com">mohammed.ezzat.1996@outlook.com</a>
           </div>
         </header>
@@ -328,7 +339,7 @@
             — every item below maps to a real feature.
           </p>
           <div class="contact">
-            Contact:
+            <span class="label">Contact</span>
             <a href="mailto:mohammed.ezzat.1996@outlook.com">mohammed.ezzat.1996@outlook.com</a>
           </div>
         </header>
