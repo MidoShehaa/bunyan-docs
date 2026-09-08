@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>حذف الحساب والبيانات — بنيان | Delete Your Account — Bunyan</title>
+    <meta
+      name="description"
+      content="كيفية طلب حذف حسابك وبياناتك في تطبيق بنيان — How to request deletion of your Bunyan account and data."
+    />
+<style>
+      :root {
+        --bg: #ffffff;
+        --surface: #f6f7f9;
+        --text: #1b1d21;
+        --muted: #5b6069;
+        --rule: #e2e5ea;
+        --accent: #b8860b;
+        --accent-soft: #fdf6e3;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1115;
+          --surface: #171a20;
+          --text: #e8eaed;
+          --muted: #9aa1ab;
+          --rule: #262a32;
+          --accent: #ffd54a;
+          --accent-soft: #1e1c12;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", system-ui, -apple-system, sans-serif;
+        font-size: 17px;
+        line-height: 1.75;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 32px 20px 80px;
+      }
+      header {
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 20px;
+        margin-bottom: 28px;
+      }
+      h1 {
+        font-size: 1.7rem;
+        line-height: 1.35;
+        margin: 0 0 6px;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 36px 0 10px;
+        padding-top: 18px;
+        border-top: 1px solid var(--rule);
+      }
+      h3 {
+        font-size: 1rem;
+        margin: 22px 0 6px;
+        color: var(--accent);
+      }
+      p,
+      li {
+        color: var(--text);
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+      .contact {
+        display: inline-block;
+        background: var(--accent-soft);
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-top: 14px;
+        font-size: 0.95rem;
+        max-width: 100%;
+      }
+      .contact .label {
+        display: block;
+        color: var(--muted);
+        font-size: 0.82rem;
+        margin-bottom: 2px;
+      }
+      .contact a {
+        display: block;
+        direction: ltr;
+        overflow-wrap: anywhere;
+      }
+      .contact a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
+      .langbar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+      }
+      .langbar a {
+        flex: 0 0 auto;
+        padding: 7px 16px;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .langbar a:hover {
+        border-color: var(--accent);
+        color: var(--text);
+      }
+      section[lang="en"] {
+        direction: ltr;
+        text-align: left;
+      }
+      .tablewrap {
+        overflow-x: auto;
+        margin: 14px 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 480px;
+        font-size: 0.93rem;
+      }
+      th,
+      td {
+        border: 1px solid var(--rule);
+        padding: 9px 12px;
+        text-align: inherit;
+        vertical-align: top;
+      }
+      th {
+        background: var(--surface);
+        font-weight: 600;
+      }
+      ul {
+        padding-inline-start: 22px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      .divider {
+        margin: 56px 0;
+        border: 0;
+        border-top: 3px double var(--rule);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 18px;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-align: center;
+        direction: ltr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>حذف الحساب والبيانات</h1>
+        <p class="updated">
+          تطبيق <strong>بنيان</strong> — المطوّر: MidoSheha ·
+          <span dir="ltr">com.midoshehaa.fitnessapp</span>
+        </p>
+      </header>
+
+      <div class="langbar">
+        <a href="#ar">العربية</a>
+        <a href="#en">English</a>
+        <a href="../privacy-policy/">سياسة الخصوصية</a>
+      </div>
+
+      <section id="ar">
+        <h2>كيف تطلب حذف حسابك</h2>
+        <p>
+          يمكنك طلب حذف حسابك في بنيان وجميع بياناتك المرتبطة به في أي وقت، دون الحاجة إلى تثبيت
+          التطبيق. اتبع الخطوات الثلاث التالية:
+        </p>
+        <ol>
+          <li>
+            أرسل رسالة بريد إلكتروني إلى العنوان أدناه <strong>من البريد نفسه المسجَّل في
+            حسابك</strong> — هذا ما نتحقق به من هويتك.
+          </li>
+          <li>اكتب في الموضوع: <strong>حذف حساب بنيان</strong> أو <span dir="ltr">Delete Bunyan account</span>.</li>
+          <li>
+            سنؤكد استلام الطلب خلال <strong>٧ أيام</strong>، وننفّذ الحذف خلال
+            <strong>٣٠ يوماً</strong> على الأكثر من تاريخ التأكيد.
+          </li>
+        </ol>
+
+        <div class="contact">
+          <span class="label">البريد المخصص لطلبات الحذف</span>
+          <a href="mailto:mohammed.ezzat.1996@outlook.com?subject=%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D8%A8%D9%86%D9%8A%D8%A7%D9%86">mohammed.ezzat.1996@outlook.com</a>
+        </div>
+
+        <h2>ما الذي يُحذف</h2>
+        <p>عند تنفيذ الطلب تُحذف البيانات التالية نهائياً:</p>
+        <ul>
+          <li>حساب الدخول نفسه: البريد الإلكتروني، الاسم، ومعرّف المستخدم.</li>
+          <li>ملفك الشخصي: الوزن، الطول، العمر، الجنس، والأهداف.</li>
+          <li>سجلّ تمارينك، ومجموعاتك وأوزانك، وتقدّمك في البرامج.</li>
+          <li>قياسات الجسم، وسجلّ الطعام.</li>
+          <li>صور التقدّم المرفوعة على التخزين السحابي.</li>
+          <li>منشوراتك في المجتمع، ورسائلك في الدردشة العامة، ورسائلك الخاصة.</li>
+          <li>قائمة المستخدمين الذين حظرتهم.</li>
+          <li>نقاط الخبرة والرتب والإنجازات.</li>
+        </ul>
+
+        <h2>ما الذي يُحتفظ به ولماذا</h2>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>البيانات</th>
+                <th>المدة</th>
+                <th>السبب</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>البلاغات التي قدّمتها ضد محتوى مسيء</td>
+                <td>حتى ١٢ شهراً</td>
+                <td>
+                  سلامة المستخدمين ومعالجة إساءة الاستخدام. يُزال معرّفك منها فور حذف حسابك،
+                  فتبقى بلا صلة بك.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          لا يُحتفظ بأي شيء آخر. والبيانات المخزَّنة على جهازك وحده تُمحى بإلغاء تثبيت التطبيق.
+        </p>
+
+        <h2>ملاحظة</h2>
+        <p>
+          حذف الحساب لا رجعة فيه. لا يمكننا استعادة بياناتك بعد تنفيذ الطلب. إن أردت الاحتفاظ
+          بنسخة، استخدم <strong>الإعدادات ← تصدير البيانات</strong> داخل التطبيق قبل إرسال الطلب.
+        </p>
+      </section>
+
+      <section id="en" lang="en">
+        <h2>How to request deletion of your account</h2>
+        <p>
+          You can ask us to delete your Bunyan account and all data associated with it at any time,
+          without installing the app. Three steps:
+        </p>
+        <ol>
+          <li>
+            Email the address below <strong>from the same address registered on your
+            account</strong> — that is how we verify it is you.
+          </li>
+          <li>Use the subject line <strong>Delete Bunyan account</strong>.</li>
+          <li>
+            We acknowledge the request within <strong>7 days</strong> and complete the deletion
+            within <strong>30 days</strong> of that acknowledgement at the latest.
+          </li>
+        </ol>
+
+        <div class="contact">
+          <span class="label">Account deletion requests</span>
+          <a href="mailto:mohammed.ezzat.1996@outlook.com?subject=Delete%20Bunyan%20account">mohammed.ezzat.1996@outlook.com</a>
+        </div>
+
+        <h2>What is deleted</h2>
+        <ul>
+          <li>The sign-in account itself: email address, name, and user ID.</li>
+          <li>Your profile: weight, height, age, gender, and goals.</li>
+          <li>Your workout history, sets and loads, and program progress.</li>
+          <li>Body measurements and food log.</li>
+          <li>Progress photos held in cloud storage.</li>
+          <li>Your community posts, global chat messages, and direct messages.</li>
+          <li>Your list of blocked users.</li>
+          <li>XP, ranks, and achievements.</li>
+        </ul>
+
+        <h2>What is kept, and why</h2>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Retention</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reports you filed against abusive content</td>
+                <td>Up to 12 months</td>
+                <td>
+                  User safety and abuse handling. Your identifier is stripped from them as soon as
+                  your account is deleted, so they no longer point back to you.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Nothing else is retained. Data held only on your device is removed when you uninstall the
+          app.
+        </p>
+
+        <h2>Note</h2>
+        <p>
+          Account deletion cannot be undone. We cannot restore your data once the request has been
+          carried out. To keep a copy first, use <strong>Settings &rarr; Export data</strong> in the
+          app before you send the request.
+        </p>
+      </section>
+
+      <footer>بنيان — Bunyan &nbsp;·&nbsp; com.midoshehaa.fitnessapp</footer>
+    </div>
+  </body>
+</html>
